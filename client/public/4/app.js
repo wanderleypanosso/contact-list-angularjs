@@ -5,25 +5,25 @@ angular.module('contactListApp',['ui.mask'])
                           name: 'Wanderley Panosso',
                           phone: '16996000581',
                           email: 'wanderley.panosso@gmail.com',
-                          address:'Nelson Spelman Street, 141, Jaboticabal, SP, Brazil'
+                          address:'Rua Nelson Spelman Street, Jaboticabal, SP, Brazil'
                         },
                         {
-                          name: 'Emerson Aquino',
+                          name: 'Carolina Aguiar',
                           phone: '16997696895',
-                          email: 'emerson@hotmail.com',
-                          address: 'Floriano Peixoto Street, 100, Catanduva, SP, Brazil'
+                          email: 'carol@hotmail.com',
+                          address: 'Rua Floriano Peixoto, 100, Ribeirao Preto, SP, Brazil'
                         },
                         {
-                          name: 'Murilo Panosso',
+                          name: 'Pedro Paulo',
                           phone: '16993432206',
-                          email: 'murilo@hotmail.com',
-                          address: 'Rio Branco Street, 110, Jaboticabal, SP, Brazil'
+                          email: 'pedro@hotmail.com',
+                          address: 'Rua Rio Branco, 110, Jaboticabal, SP, Brazil'
                         },
                         {
-                          name: 'Jederson Zuchi',
+                          name: 'Joao Jose',
                           phone: '16997443359',
-                          email: 'jederson@gmail.com',
-                          address: 'Alfredo Pinheiros Street, 330, Monte Alto, SP, Brazil'
+                          email: 'joao@gmail.com',
+                          address: 'Rua Alfredo Pinheiros, 330, Taquaritinga, SP, Brazil'
                         }
                       ];
 

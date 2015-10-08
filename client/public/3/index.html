@@ -19,25 +19,25 @@
                       name: 'Wanderley Panosso',
                       phone: '16996000581',
                       email: 'wanderley.panosso@gmail.com',
-                      address:'Nelson Spelman Street, 141, Jaboticabal, SP, Brazil'
+                      address:'Rua Nelson Spelman Street, Jaboticabal, SP, Brazil'
                     },
                     {
-                      name: 'Emerson Aquino',
+                      name: 'Carolina Aguiar',
                       phone: '16997696895',
-                      email: 'emerson@hotmail.com',
-                      address: 'Floriano Peixoto Street, 100, Catanduva, SP, Brazil'
+                      email: 'carol@hotmail.com',
+                      address: 'Rua Floriano Peixoto, 100, Ribeirao Preto, SP, Brazil'
                     },
                     {
-                      name: 'Murilo Panosso',
+                      name: 'Pedro Paulo',
                       phone: '16993432206',
-                      email: 'murilo@hotmail.com',
-                      address: 'Rio Branco Street, 110, Jaboticabal, SP, Brazil'
+                      email: 'pedro@hotmail.com',
+                      address: 'Rua Rio Branco, 110, Jaboticabal, SP, Brazil'
                     },
                     {
-                      name: 'Jederson Zuchi',
+                      name: 'Joao Jose',
                       phone: '16997443359',
-                      email: 'jederson@gmail.com',
-                      address: 'Alfredo Pinheiros Street, 330, Monte Alto, SP, Brazil'
+                      email: 'joao@gmail.com',
+                      address: 'Rua Alfredo Pinheiros, 330, Taquaritinga, SP, Brazil'
                     }
                   ]">
     <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
@@ -93,7 +93,7 @@
             </div>
             <br/>
             <div class="input-group">
-              <input ng-disabled="!newPerson.name || !newPerson.email" ng-click="people.push(newPerson); newPerson = {};" type="button" class="form-control btn btn-success" placeholder="" value="Add"/>
+              <input ng-disabled="!newPerson.name || !newPerson.phone" ng-click="people.push(newPerson); newPerson = {};" type="button" class="form-control btn btn-success" placeholder="" value="Add"/>
             </div>
           </div>
         </div>
@@ -118,16 +118,15 @@
                 <h3 class="panel-title">{{person.name}}</h3>
               </div>
               <div class="panel-body">
-                <div class="panel-body">
-                  <p>
-                    <b>Phone: </b> {{person.phone}}
-                  </p>
-                  <p ng-show="person.email">
-                    <b>Email: </b> {{person.email}}
-                  </p>
-                  <p ng-show="person.address">
-                    <b>Address: </b> {{person.address}}
-                  </p>
+                <p>
+                  <b>Phone: </b> {{person.phone }}
+                </p>
+                <p ng-show="person.email">
+                  <b>Email: </b> {{person.email}}
+                </p>
+                <p ng-show="person.address">
+                  <b>Address: </b> {{person.address}}
+                </p>
               </div>
               <div class="panel-footer">
                 <a ng-click="people.splice(people.indexOf(person), 1);" class="btn btn-danger">Remove</a>
