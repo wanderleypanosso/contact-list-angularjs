@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="search">Search</label>
+        <input type="text" class="form-control" id="search" placeholder="Type to search" ng-model="search"/>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <h3>People</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="row">
+      <div ng-repeat="person in people | filter:{$: search} | orderBy:'name' track by $index">
+        <div ng-if="$index % 3 === 0" class="clearfix visible-*"></div>
+        <div class="col-md-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">{{person.name}}</h3>
+            </div>
+            <div class="panel-body">
+              <p>
+                <b>Phone: </b> {{person.phone | phone:'(99)9999-99999'}}
+              </p>
+              <p ng-show="person.email">
+                <b>Email: </b> {{person.email}}
+              </p>
+              <p ng-show="person.address">
+                <b>Address: </b> {{person.address}}
+              </p>
+            </div>
+            <div class="panel-footer">
+              <a ng-click="doRemove(person)" class="btn btn-danger">Remove</a>
+              <a ng-href="#/contacts/edit/{{person._id}}" class="btn btn-info">Edit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

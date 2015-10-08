@@ -1,0 +1,16 @@
+{
+  "name": "contact-list-api",
+  "version": "1.0.0",
+  "description": "SIMTEC 2015 Demo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wanderley Panosso",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "mongoose": "^4.1.10"
+  }
+}
