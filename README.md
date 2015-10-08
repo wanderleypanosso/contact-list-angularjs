@@ -1,28 +1,27 @@
-Sistema Login Completo
+Contact List em AngularJS + API Node & MongoDB - SIMTEC 2015
 ===========
 
-Tutorial: https://wp-login-node.herokuapp.com
+Live Demo: https://contact-list-angularjs.herokuapp.com
 ----
 
-Live Demo: https://wp-login-node.herokuapp.com
+Contact List utilizando:
 ----
+* API
+  * MongoDB v3
+  * Node v4
+  * Express v4
 
-Sistema de Login utilizando:
-----
-
-* MongoDB v3
-* Node v12
-* Express v4
-* Jade v1
-* Bootstrap v3
+* Clients
+  * Bootstrap v3
+  * AngularJS v1.4.7
 
 Funcionalidades:
 ----
 
-* Registrar-se
-* Entrar
-* Área Restrita
-* Sair
+* Add Contacts
+* Edit Contacts
+* Remove Contacts
+* Filter Contacts
 
 Autor
 ----
@@ -35,27 +34,38 @@ Autor
 Mais informações
 ----
 
+* https://www.facebook.com/desvendeangularjs
+
+* https://www.angularjs.org/
 * https://www.mongodb.org/
 * https://nodejs.org/
 * http://expressjs.com/
-* http://jade-lang.com/
 * http://getbootstrap.com/
 
 
 Dependências
 ----
-    * MongoDB rodando em "mongodb://localhost:27017/autenticacao"
+  * API
+    * MongoDB rodando em "mongodb://localhost:27017/contacts"
+    * Veja api/package.json
 
-    * Veja package.json
+  * Client
+    * Veja api/package.json
 
 Instalação do App
 ----
 
-	git clone https://github.com/wanderleypanosso/login-node.git
-	cd login-node
+- Client
+    git clone https://github.com/wanderleypanosso/contact-list-angularjs.git
+	  cd contact-list-angularjs/client
+    node app.js
+    Navegue para http://localhost:3000/{1, 2, 3, 4, 5, 6, 7}/index.html
+
+Edite a variável `api` no arquivo client/public/7/services/contact.store.js para alterar a conexão com o Backend.
+
+- API
+  cd contact-list-angularjs/api
 	npm install
-	npm start
+	node server.js
 
-Edite a variável `mongoUri` no arquivo app.js para alterar a conexão com o MongoDB.
-
-Inicie o App com `npm start`
+Edite a variável `mongoUri` no arquivo api/server.js para alterar a conexão com o MongoDB.
