@@ -7,8 +7,9 @@ angular.module('contactListApp')
     var contactApi = $resource(api + '/:id', {},{
       //'query':  { method:'GET', isArray:true },
       //'remove': { method: 'DELETE' },
-      'update': { method: 'PUT' },
-      //'save': { method: 'POST' }
+      //'save': { method: 'POST' },
+      'update': { method: 'PUT' }
+
     });
 
     var factory = {};
