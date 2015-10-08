@@ -14,6 +14,8 @@ Contact List utilizando:
 * Clients
   * Bootstrap v3
   * AngularJS v1.4.7
+  * Node v4
+  * Express v4  
 
 Funcionalidades:
 ----
@@ -56,16 +58,16 @@ Instalação do App
 ----
 
 - Client
-    git clone https://github.com/wanderleypanosso/contact-list-angularjs.git
-	  cd contact-list-angularjs/client
-    node app.js
-    Navegue para http://localhost:3000/{1, 2, 3, 4, 5, 6, 7}/index.html
+    * git clone https://github.com/wanderleypanosso/contact-list-angularjs.git
+	  * cd contact-list-angularjs/client
+    * node app.js
+    * Navegue para http://localhost:3000/{1, 2, 3, 4, 5, 6, 7}/index.html
 
 Edite a variável `api` no arquivo client/public/7/services/contact.store.js para alterar a conexão com o Backend.
 
 - API
-  cd contact-list-angularjs/api
-	npm install
-	node server.js
+  * cd contact-list-angularjs/api
+	* npm install
+	* node server.js
 
 Edite a variável `mongoUri` no arquivo api/server.js para alterar a conexão com o MongoDB.
