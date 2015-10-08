@@ -58,9 +58,9 @@ Instalação do App
 ----
 
 - API
-  * cd contact-list-angularjs/api
-	* npm install
-	* node server.js
+    * cd contact-list-angularjs/api
+    * npm install
+    * node server.js
 
 Edite a variável `mongoUri` no arquivo api/server.js para alterar a conexão com o MongoDB.
 
