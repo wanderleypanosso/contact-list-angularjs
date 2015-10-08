@@ -67,6 +67,7 @@ Edite a variável `mongoUri` no arquivo api/server.js para alterar a conexão co
 - Client
     * git clone https://github.com/wanderleypanosso/contact-list-angularjs.git
     * cd contact-list-angularjs/client
+    * npm install
     * node app.js
     * Navegue para http://localhost:3000/{1, 2, 3, 4, 5, 6, 7}/index.html
 
