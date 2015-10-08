@@ -56,6 +56,7 @@ Dependências
 
 Instalação do App
 ----
+- git clone https://github.com/wanderleypanosso/contact-list-angularjs.git
 
 - API
     * cd contact-list-angularjs/api
@@ -65,7 +66,6 @@ Instalação do App
 Edite a variável `mongoUri` no arquivo api/server.js para alterar a conexão com o MongoDB.
 
 - Client
-    * git clone https://github.com/wanderleypanosso/contact-list-angularjs.git
     * cd contact-list-angularjs/client
     * npm install
     * node app.js
