@@ -36,8 +36,6 @@ Autor
 Mais informações
 ----
 
-* https://www.facebook.com/desvendeangularjs
-
 * https://www.angularjs.org/
 * https://www.mongodb.org/
 * https://nodejs.org/
